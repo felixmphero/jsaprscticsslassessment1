@@ -70,6 +70,24 @@ productId:"P-001",name:"wireless mouse",quantity:2,price:7500
       function order(orderid,customer,address,items,payment){
 
       } 
+      //question11 b
+      //update a new item bought
+      orderliteral.items.push({
+        productId:"P-005",
+        name:"wiredmouse",
+        quantity:4,price:8000
+      });
+      console.log(orderliteral.items);
+      //update transactionid
+      orderliteral.payment.push(
+        {
+            transactionid:"TXN-900135"
+
+      });
+      console.LOG(orderliteral.payment.transactionid);
+      //UPDATE ORDER TOTAL
+      orderliteral.orderTotal.push(50000);
+      console.log(orde.orderTotal);
       
       //conversion of object to json
       const jsonString=JSON.stringify(orderliteral);
